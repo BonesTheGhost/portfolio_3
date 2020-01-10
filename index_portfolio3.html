@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>AJ Babler - Portfolio2</title>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="assets/css/style_portfolio3.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- Tabs section -->
+    <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="aj-tab" data-toggle="tab" href="#aj" role="tab" aria-controls="aj"
+                aria-selected="true">AJ Babler</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery"
+                aria-selected="false">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="networking-tab" data-toggle="tab" href="#networking" role="tab"
+                aria-controls="networking" aria-selected="false">Networking</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab"
+                aria-controls="networking" aria-selected="false">Networking</a>
+        </li>
+    </ul>
+
+
+
+
+
+
+
+
+    <!--The first tab:: The BIO Page with profile picture-->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="aj" role="tabpanel" aria-labelledby="aj-tab">
+
+            <div id="bio" class="container">
+
+                <div class="row">
+                    <!--Column on left side for the image section-->
+                    <div class="col-4">col-4
+
+                        <!--The left side Image-->
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="./assets/img/aj.jpg" alt="Card image cap">
+                            <!-- TEXT UNDER THE PROFILE PICTURE
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        -->
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <!--Column on the right side for the Basic 'About Me' section-->
+                    <div class="col-8">col-8
+
+                        <div class="jumbotron jumbotron-fluid">
+                            <div class="container">
+                                <h1 class="display-4" id="myBillboard">AJ Babler</h1>
+                                <p id="bioText" class="lead">A left-handed technology enthusiast with a creative
+                                    streak.<br>
+                                    Currently a Technical Specialist with Apple Inc.<br>
+                                    Programming samples in the "Gallery" tab. Contact information in the "Networking"
+                                    tab.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12">
+                        <div class="jumbotron jumbotron-fluid">
+                            <div class="container">
+                                <h1 class="display-4" id="myBillboard">AJ Babler</h1>
+                                <p id="bioText" class="lead">A left-handed technology enthusiast with a creative
+                                    streak.<br>
+                                    Currently a Technical Specialist with Apple Inc.<br>
+                                    Programming samples in the "Gallery" tab. Contact information in the "Networking"
+                                    tab.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--This is the carousal section with the images of my other apps, with links to the github pages.-->
+        <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+
+
+            <div class="container">
+                <div id="galleryInstructionsCard" class="card border-dark mb-12">
+                    <div class="card-body text-dark">
+                        <h5 id="galleryInstructionsTitle" class="card-title">Work. Cited.</h5>
+                        <p id="galleryInstructions" class="card-text">Click the slide to visit the page on GitHub.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Carousel -->
+            <div id="carouselContainer" class="container">
+                <div id="carouselBulk" id="carouselExampleInterval" class="carousel slide carousel-fade"
+                    data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="10000">
+                            <a href="https://bonestheghost.github.io/hw6_GiphyAPI/"><img src="assets/img/GiphyAPI.png"
+                                    class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Giphy API</h5>
+                                <p class="carouselText">First experience with API's and manipulating data from an
+                                    external source.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <a href="https://bonestheghost.github.io/LifeStyle-Project-1/"><img
+                                    src="assets/img/LifeStyle.png" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Project 1</h5>
+                                <p class="carouselText">Our first major project; multiple API's, new tech, self-managed.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <a href="https://bonestheghost.github.io/hw7_firebase/"><img
+                                    src="assets/img/TrainScheduler.png" class="d-block w-100" alt="..."></a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Train Scheduler</h5>
+                                <p class="carouselText">First interaction with Firebase.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--This is the contact info tab-->
+        <div class="tab-pane fade" id="networking" role="tabpanel" aria-labelledby="networking-tab">
+
+            <!-- MY GRID LAYOUT -->
+
+            <!-- ROW [1] :: COLUMN 1 & 2 -->
+            <div class="containter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+
+                            <div id="netCards" class="card text-center">
+                                <div class="card-header">
+                                    Contact
+                                </div>
+                                <div class="card-body">
+                                    <h5 id="netCards_h5" class="card-title">AJ Babler</h5>
+                                    <p class="card-text">Email: ababler008@gmail.com</p>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+
+                            <div id="netCards" class="card text-center">
+                                <div class="card-header">
+                                    Resumé
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">My resume.</p>
+                                    <a href="#" class="btn btn-primary">Download</a>
+                                </div>
+                            </div>
+
+
+                            <!-- ROW [2] :: COLUMN 1 & 2 -->
+
+
+                        </div>
+                        <div class="col">
+
+
+                            <div id="netCards" class="card text-center">
+                                <div class="card-header">
+                                    GitHub
+                                </div>
+                                <div class="card-body">
+                                    <h5 id="netCards_h5" class="card-title">BonesTheGhost</h5>
+                                    <p class="card-text">All of my repositories on GitHub with the homework and
+                                        projects
+                                        from my
+                                        VU Bootcamp experience.</p>
+                                    <a href="https://github.com/BonesTheGhost" class="btn btn-primary">My GitHub
+                                        Page</a>
+                                </div>
+                            </div>
+
+                            <div id="netCards" class="card text-center">
+                                <div class="card-header">
+                                    LinkedIn
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">My LinkedIn Profile.</p>
+                                    <a href="https://www.linkedin.com/in/aj-babler-08"
+                                        class="btn btn-primary">Profile</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab">
+
+            <h1>RESUME TAB</h1>
+
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
