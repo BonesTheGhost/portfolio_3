@@ -44,8 +44,8 @@
                 aria-controls="networking" aria-selected="false">Networking</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab"
-                aria-controls="networking" aria-selected="false">Resume</a>
+            <a class="nav-link" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume"
+                aria-selected="false" data-tab-destination="resume-tab">Resume</a>
         </li>
     </ul>
 
@@ -209,7 +209,8 @@
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">My resume.</p>
-                                    <a href="#resume" class="btn btn-primary">Resume Tab</a>
+                                    <a href="#resume" class="btn btn-primary"
+                                        data-tab-destination="resume-button">Resume Tab</a>
                                 </div>
                             </div>
 
@@ -269,6 +270,30 @@
 
 
     </div>
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            activaTab('aaa');
+        });
+
+        function activaTab(tab) {
+            $('.nav-tabs a[href="#' + tab + '"]').tab('show');
+        };
+
+        $("button[resume-button]").on('click', function () {
+            console.log('Button Click Registered')
+            var tab = $(this).data('resume-tab');
+            $("#" + tab).click();
+        });
+
+
+
+
+    </script>
 
 
 </body>
