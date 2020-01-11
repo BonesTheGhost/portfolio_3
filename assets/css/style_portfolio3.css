@@ -91,3 +91,23 @@ p {
 body {
     background-color: #116466;
 }
+
+.company {
+    color:black; 
+}
+
+.section-title {
+    color: #d9b08c;
+}
+
+.job {
+    color:#2c3531
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 24px;
+}
